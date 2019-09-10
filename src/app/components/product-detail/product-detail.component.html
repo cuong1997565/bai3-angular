@@ -1,0 +1,11 @@
+<ng-container *ngIf="product ; else ngProduct">
+  <h1> Name : {{ product.name }} </h1>
+  <h2> Price : {{ product.price }} VND </h2>
+  <h3> Status : {{ product.status ? 'Active' : 'Deactive' }} </h3>
+  <a [routerLink]="['/product/2']">Product Id 2</a>
+</ng-container>
+
+<ng-template #ngProduct>
+  This product has been deleted
+</ng-template>
+
