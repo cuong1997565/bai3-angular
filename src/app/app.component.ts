@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bai3-angular';
+  // title = 'bai3-angular';
+  public title : string = "Dependency Injection : Service";
 }
